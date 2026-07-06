@@ -20,8 +20,8 @@ public class EstacionAnio {
         else if (mes == 9 || mes == 10 || mes == 11)
             estacion = "Otoño";
         else
-            estacion = "estacion no reconocidad";
+            estacion = "estacion no reconocida";
 
-        System.out.printf("La estacion para el mes de %d, es %s", mes, estacion);
+        System.out.printf("La estacion para el mes %d, es %s", mes, estacion);
     }
 }
