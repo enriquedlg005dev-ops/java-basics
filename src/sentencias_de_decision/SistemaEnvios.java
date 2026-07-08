@@ -17,10 +17,17 @@ public class SistemaEnvios {
 		System.out.println("coloca el peso en kg");
 		var peso = Double.parseDouble(consola.nextLine());
 		
-		var costoEnvio = 0;
+		var costoEnvio = 0.0;
 		
 		if (destino.equals("nacional")) {
 			costoEnvio = peso * 10;
+			System.out.printf("el costo del envio es %.2f", costoEnvio);
+		}else if(destino.equals("internacional")) {
+			costoEnvio = peso * 20;
+			System.out.printf("el costo del envio es %.2f", costoEnvio);
+		}else {
+			System.out.println("destino no reconocido");
 		}
+		
 	}
 }
